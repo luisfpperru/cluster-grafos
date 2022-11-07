@@ -33,7 +33,8 @@ Executar scripts com o casos 1 a 4
 ./auto.sh
 ```
 
-#### Exemplo usando os dados em dataset1.txt na pasta input, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
+### Exemplo de Comando de Execução
+Usando os dados em dataset1.txt na pasta input, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
 
 ```bash
 ./main input/dataset1.txt output/output-1-2.txt 2 1000 1.0 0.5
@@ -47,7 +48,8 @@ número_de_arestas <br>
 número_nó_saida número_nó_entrada peso_da_aresta <br>
 ... <br>
 
-#### Exemplo com 6 nós, 7 arestas, o nó 0 se liga ao nó 1 com uma aresta de peso 0.9
+#### Exemplo de Arquivo de Entrada
+Usando 6 nós, 7 arestas, o nó 0 se liga ao nó 1 com uma aresta de peso 0.9:
 
 6 <br>
 7 <br>
