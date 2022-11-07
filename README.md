@@ -3,7 +3,10 @@
 
 ### Compilador
  - No projeto eu uso o g++ presente no [Mingw-w64](https://www.mingw-w64.org/downloads/).
- - Qualquer duvida recorrer a [documentação](https://code.visualstudio.com/docs/cpp/config-mingw) para rodar o projeto no VS Code.
+ - Qualquer duvida recorrer a [documentação](https://code.visualstudio.com/docs/cpp/config-mingw) para rodar o projeto no VS Code em Windows.
+ - No Linux ou WSL utilizando uma distribuição Ubuntu é possível obter o compilador através dos comandos:
+ sudo apt install g++
+ sudo apt install build-essential
 
 ### Compilar/Build
 
@@ -11,12 +14,19 @@ g++ main.cpp -o main
 
 ### Executar
 
-./main caminho_arquivo_entrada caminho_arquivo_saida n_classes max_it chance_buscar chance_perturbar  
+./main caminho_arquivo_entrada caminho_arquivo_saida n_classes max_it chance_buscar chance_perturbar 
 
-#### Exemplo usando os dados em instancia-1.txt na pasta instancias, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
+### Linux Script
+
+- Permissão para executar
+chmod +x auto.sh
+- Executar scripts com o casos 1 a 4
+./auto.sh
+
+#### Exemplo usando os dados em dataset1.txt na pasta input, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
 ./main instancias/instancia-1.txt saidas/saida1-2.txt 2 1000 1.0 0.5 
 
-### Arquivo de entrada
+### Arquivo de entrada (folder input)
 O arquivo segue o seguinte padrão: <br>
 
 número_de_nós <br>
@@ -36,7 +46,7 @@ número_nó_saida número_nó_entrada peso_da_aresta <br>
 4 5 0.2 <br>
 5 3 0.3 <br>
 
-### Arquivo de saida
+### Arquivo de saida (folder output)
 O arquivo de saída é construido no seguinte padrão: <br>
 
 avaliação_solução <br>
