@@ -10,24 +10,34 @@
 
 ### Compilar/Build
 
+```bash
 g++ main.cpp -o main
+```
 
 ### Executar
 
-./main caminho_arquivo_entrada caminho_arquivo_saida n_classes max_it chance_buscar chance_perturbar 
+```bash
+./main caminho_arquivo_entrada caminho_arquivo_saida n_classes max_it chance_buscar chance_perturbar
+```
 
 ### Linux Script
 
 Permissão para executar
-<br>
+```bash
 chmod +x auto.sh
-<br><br>
-Executar scripts com o casos 1 a 4
+```
 <br>
+Executar scripts com o casos 1 a 4
+
+```bash
 ./auto.sh
+```
 
 #### Exemplo usando os dados em dataset1.txt na pasta input, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
-./main instancias/instancia-1.txt saidas/saida1-2.txt 2 1000 1.0 0.5 
+
+```bash
+./main input/dataset1.txt output/output-1-2.txt 2 1000 1.0 0.5
+```
 
 ### Arquivo de entrada (folder input)
 O arquivo segue o seguinte padrão: <br>
@@ -37,7 +47,7 @@ número_de_arestas <br>
 número_nó_saida número_nó_entrada peso_da_aresta <br>
 ... <br>
 
-#### <b> Exemplo com <b/> 6 nós, 7 arestas, o nó 0 se liga ao nó 1 com uma aresta de peso 0.9
+#### Exemplo com 6 nós, 7 arestas, o nó 0 se liga ao nó 1 com uma aresta de peso 0.9
 
 6 <br>
 7 <br>
@@ -80,4 +90,3 @@ No exemplo, como temos 3 classes os nós só podem ser da classe 0, 1 ou 2.
  - o MQ é feito através da diferença da média de arestas externas menos a média das arestas internas de cada classe.
  - Uma aresta interna é aquela que liga a dois nós da mesma classe.
  - Uma aresta externa é aquela que liga dois nós de classes diferentes.
-  
