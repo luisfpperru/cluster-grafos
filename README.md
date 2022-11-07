@@ -48,7 +48,7 @@ número_de_arestas <br>
 número_nó_saida número_nó_entrada peso_da_aresta <br>
 ... <br>
 
-#### Exemplo de Arquivo de Entrada
+### Exemplo de Arquivo de Entrada
 Usando 6 nós, 7 arestas, o nó 0 se liga ao nó 1 com uma aresta de peso 0.9:
 
 6 <br>
