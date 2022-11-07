@@ -18,9 +18,12 @@ g++ main.cpp -o main
 
 ### Linux Script
 
-- Permissão para executar
+Permissão para executar
+<br>
 chmod +x auto.sh
-- Executar scripts com o casos 1 a 4
+<br><br>
+Executar scripts com o casos 1 a 4
+<br>
 ./auto.sh
 
 #### Exemplo usando os dados em dataset1.txt na pasta input, com 2 classes, 1000 interações do programa, chance de buscar e perturbar 1.0 e 0.5, respectivamente:  
