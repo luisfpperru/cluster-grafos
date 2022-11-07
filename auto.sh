@@ -1,5 +1,6 @@
 #!/bin/bash
 g++ src/main.cpp -o main
+mkdir -p output
 exec=./main
 for i in {1..4}
 do 
